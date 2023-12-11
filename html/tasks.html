@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tasks.css">
+    <title>Tasks</title>
+</head>
+<body>
+    <!--Main-->
+    <main>
+        <!--Left Panel of to-do page-->
+        <div class="left">
+            <div class="upper">
+                <div class="todos">
+                    <img src="../images/todo.png" alt="">
+                    <h2>Todos</h2>
+                </div>
+
+                <!--Tags Card-->
+                <div class="tags card">
+                    <select name="" id="">
+                        <option value="">All Tags</option>
+                        <option value="">Work</option>
+                        <option value="">Personal</option>
+                        <option value="">Health</option>
+                        <option value="">Create a new Tag</option>
+                    </select>
+                </div>
+
+                <!--Calendar Card-->
+                <!-- <div class="calendar" id="calendar"></div> -->
+            </div>
+
+            <div class="l_user"></div>
+        </div>
+
+        <!--Right Panel of the to-do page-->
+        <div class="right" id="right">
+            <!--Create Card-->
+            <button class="create" id="create">
+                Create
+            </button>
+
+            <!--Task Details collection-->
+            <div class="pop_up" id="pop_up">
+                <h3>Add a new task</h3>
+                <!--Task Title-->
+                <div>
+                    <input type="text" placeholder="Add task" class="card pop_tags" id="task"><br>
+                </div>
+
+                <!--Task Tag for Color-->
+                <div class="tags card pop_tags">
+                    <select name="" id="tag">
+                        <option value="">Choose Tag</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="health">Health</option>
+                        <option value="">Create a new Tag</option>
+                    </select>
+                </div>
+
+                <!--Add Task-->
+                <button class="pop_tags card" onclick="addTask()">
+                    Add
+                </button>
+            </div>
+
+            <!--To-Do Container-->
+            <div class="no_tasks" id="no_tasks">
+                <p>No tasks added yet</p>
+            </div>
+        </div>
+
+    </main>
+    <script src="../scripts.js"></script>
+</body>
+</html>
